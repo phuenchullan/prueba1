@@ -1,0 +1,24 @@
+
+<h3 class="text-secondary mb-5">Monedas e Indicadores</h3>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Unidad de Medida</th>
+        <th>Fecha</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let currency of data">
+        <td>{{ currency.codigo }}</td>
+        <td>{{ currency.nombre }}</td>
+        <td>{{ currency.unidad_medida }}</td>
+        <td>{{ currency.fecha }}</td>
+        <td>{{ currency.valor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
